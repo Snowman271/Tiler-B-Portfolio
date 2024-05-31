@@ -71,7 +71,7 @@ Here are some of the projects I've worked on:
 - **Technologies Used**: [List of technologies]
 - **Link**: [Link to the project if available]
 
-### Project 3: [Project Title]
+### Project 4: [Project Title]
 - **Description**: [Brief description of the project]
 - **Technologies Used**: [List of technologies]
 - **Link**: [Link to the project if available]

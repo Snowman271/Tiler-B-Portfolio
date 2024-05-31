@@ -7,74 +7,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="navbar" class="large">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#" class="home-link"><img src="Images\green house (2).png" alt="Home"></a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#mywork">My Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Tiler Benzmiller, a Fullstack Dev / Junior Game Dev.</p>
+        <h1>Tiler Benzmiller</h1>
+        <p>Fullstack Web Dev / Junior Game Dev</p>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Im 24 Born in California and from a as far as i can remember have been enfacuated with technology. As I grew older I started persuing my dream and havent looked back, I enjoy what I do and hope to further my career in the process.</p>
+        <p>I'm 24 live in Orange County and am working on my own game, I am fasconated with tech and love to learn new and complex strategies, if you need anything feel free to ask.</p>
     </section>
-
-    <section id="portfolio">
+    <section id="mywork">
         <h2>My Work</h2>
-        <div class="projects-grid">
-            <div class="project">
+        <div class="project">
+            <a href="https://gpteam.herokuapp.com/">
+                <img src="Images\Projectperfect site.png" alt="Project 1">
+            </a>
+            <h3>Project Perfect</h3>
+            <p>Using AWS Buckets and multiple APIs to create a site used to connect people with fellow students that can help or get you connected to the people you need to advance your career. </p>
+        </div>
+        <div class="project">
+            <a href="https://sleepy-plateau-67622.herokuapp.com/#/">
+                <img src="Images\Cheriteam Site.png" alt="Project 1">
+            </a>
+            <h3>Donation Service</h3>
+            <p>Made with stripe and Semantic Ui We created this app to connect restaruants having access food with charities and foodbanks trying to help the hunger situation all over the world. </p>
+        </div>
+        <div class="project">
+            <a href="https://www.ironwoodsrental.com/">
+                <img src="Images\IronwoodsRentals site.png" alt="Project 1">
+            </a>
+            <h3>Ironwoods offroad Rentals</h3>
+            <p>A Company website made for the publics introduction to the desert</p>
+        </div>
+        <div class="project">
+            <a href="https://example.com">
                 <img src="Images/Baby-Yoda-Wallpaper-For-Desktop-1024x576.jpg" alt="Project 1">
-                <h3>Project Title 1</h3>
-                <p>Project description 1</p>
-            </div>
-            <div class="project">
-                <img src="Images/Baby-Yoda-Wallpaper-For-Desktop-1024x576.jpg" alt="Project 2">
-                <h3>Project Title 2</h3>
-                <p>Project description 2</p>
-            </div>
-            <div class="project">
-                <img src="Images/Baby-Yoda-Wallpaper-For-Desktop-1024x576.jpg" alt="Project 3">
-                <h3>Project Title 3</h3>
-                <p>Project description 3</p>
-            </div>
-            <div class="project">
-                <img src="Images/Baby-Yoda-Wallpaper-For-Desktop-1024x576.jpg" alt="Project 4">
-                <h3>Project Title 4</h3>
-                <p>Project description 4</p>
-            </div>
+            </a>
+            <h3>Project Title 1</h3>
+            <p>Project description 1</p>
         </div>
     </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>[Link to blog posts]</p>
-    </section>
-
     <section id="contact">
-        <h2>Contact</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="#" method="post" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            
+        </div>
     </section>
-
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
